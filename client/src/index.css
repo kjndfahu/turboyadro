@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.react-player__preview{
+  width: 370px;
+  height: 220px;
+  border-radius: 15px ;
+}
+
