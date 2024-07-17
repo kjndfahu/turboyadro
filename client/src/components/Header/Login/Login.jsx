@@ -6,6 +6,7 @@ import {useDispatch} from "react-redux";
 
 function Login({currentTab, setCurrentTab, setActive}){
     const dispatch = useDispatch()
+    const [error, setError] = React.useState('')
 
     const {register,
         handleSubmit,
@@ -18,19 +19,23 @@ function Login({currentTab, setCurrentTab, setActive}){
     })
 
     const onSubmitLogin = async (values) => {
-        const data = await dispatch(fetchAuth(values))
+        try{
+            const data = await dispatch(fetchAuth(values))
 
-        if(!data.payload){
-            alert('Не удалось авторизоваться')
+            if(!data.payload){
+                alert('Не удалось зарегистрироваться ')
+                console.log(data)
+            }
+            if(data.payload === 'User already exists'){
+                setError(data.payload)
+            } else if('token' in data.payload){
+                window.localStorage.setItem('token', data.payload.token)
+            } else {
+                alert('Не удалось зарегистрироваться')
+            }
+        } catch(err){
+            setError('Не удалось авторизоваться')
         }
-
-
-
-
-        if('token' in data.payload){
-            window.localStorage.setItem('token', data.payload.token)
-        }
-
 
     }
 
@@ -63,6 +68,8 @@ function Login({currentTab, setCurrentTab, setActive}){
                         <input className={styles.signinputpass} {...register('password', {required: 'Введите пароль'})}
                                type="text"/>
                     </div>
+
+                    <p className={styles.error}>{error}</p>
                 </div>
                 <div className={styles.buttonsblock}>
                     <button className={styles.refgistrbtn}>ВОЙТИ</button>

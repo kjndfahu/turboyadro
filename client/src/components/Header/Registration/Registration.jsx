@@ -61,7 +61,6 @@ function Registration({currentTab, setCurrentTab, setActive}) {
                         <input
                             className={styles.registerinputlogin} {...register('telegramName', {required: 'Введите имя'})}
                             type="text"/>
-                        <p className={styles.error}>{error}</p>
                         <p className={styles.paragraph}>*введите никнейм без @</p>
                     </div>
                     <div className={styles.pass}>
@@ -70,6 +69,8 @@ function Registration({currentTab, setCurrentTab, setActive}) {
                             className={styles.registerinputpass} {...register('password', {required: 'Введите пароль'})}
                             type="text"/>
                     </div>
+
+                    <p className={styles.error}>{error}</p>
                 </div>
                 <div className={styles.buttonsblock}>
                     <button className={styles.refgistrbtn}>ЗАРЕГИСТРИРОВАТЬСЯ</button>
