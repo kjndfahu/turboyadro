@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd501017-2beb-4a6d-8d6e-2138e79aca8c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/Header.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Header/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header/Login/Login.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/Login/Login.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Header/Registration/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/Registration/Registration.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header/Registration/Registration.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/Registration/Registration.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Modal/Modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Modal/Modal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/slices/authSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/slices/authSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/UserController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -34,8 +40,8 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/red-group-proj/red-planner-back-end",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/myprojects/turboyadro",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,6 +53,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\myprojects\turboyadro\client\src\assets" />
+      <recent name="D:\myprojects\turboyadro\client\public" />
       <recent name="D:\myprojects\turboyadro\src\assets" />
       <recent name="D:\myprojects\turboyadro\src\components" />
       <recent name="D:\myprojects\turboyadro\src\components\Main" />
@@ -91,6 +99,10 @@
       <workItem from="1721027765967" duration="1998000" />
       <workItem from="1721029809899" duration="17595000" />
       <workItem from="1721121690250" duration="1406000" />
+      <workItem from="1721239864001" duration="304000" />
+      <workItem from="1721287711642" duration="10149000" />
+      <workItem from="1721307280267" duration="4028000" />
+      <workItem from="1721411172214" duration="3676000" />
     </task>
     <servers />
   </component>

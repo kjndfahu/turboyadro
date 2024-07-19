@@ -5,6 +5,13 @@ import jwt from 'jsonwebtoken'
 export const register = async(req, res) => {
     try{
         const password = req.body.password
+
+        if(password.length < 5){
+            res.status(500).json({
+                message: 'Пароль должен быть минимум 5 символов'
+            })
+        }
+
         const salt = await bcrypt.genSalt(10)
         const hash = await bcrypt.hash(password, salt)
 
@@ -15,7 +22,9 @@ export const register = async(req, res) => {
 
         const existingUser = await UserModel.findOne({telegramName: doc.telegramName})
         if (existingUser) {
-            res.send('User already exists')
+            res.status(501).json({
+                message: 'Такой пользователь уже существует'
+            })
         } else{
             const user = await doc.save()
 

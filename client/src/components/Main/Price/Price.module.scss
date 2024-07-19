@@ -39,6 +39,10 @@ h1{
 table {
   border-collapse: collapse;
   width: 100%;
+
+  .tdshechka{
+    border-bottom: 2px dashed #E2E3EF;
+  }
 }
 
 th, td {
@@ -63,8 +67,8 @@ td {
   font-weight: 400;
   line-height: 19.36px;
   text-align: left;
-  border-bottom: 2px dashed #E2E3EF;
 }
+
 
 .price {
   font-family: "Inter", sans-serif;
@@ -109,8 +113,12 @@ td {
 }
 
 @media (max-width: 980px){
-  h1{
-    justify-content: center;
+  .wrapper{
+    h1{
+      font-size: 35px;
+      justify-content: center;
+      width: auto;
+    }
   }
 
   .allblock{
@@ -150,14 +158,29 @@ td {
     }
   }
 
+  table{
+    width: auto;
+    td{
+      font-size: 14px;
+    }
+
+    th{
+      font-size: 13px;
+    }
+  }
+
+  .price{
+    font-size: 15px;
+  }
+
   .allblock{
     width: auto;
     height: auto;
   }
 
   .info{
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
   }
 
   .inblockinfo{

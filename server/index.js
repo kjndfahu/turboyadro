@@ -8,7 +8,7 @@ import checkAuth from "./utils/checkAuth.js"
 import UserScheme from "./models/User.js";
 
 mongoose
-    .connect(process.env.MONGODB_URI)
+    .connect('mongodb+srv://admin:bobamessi@cluster0.hs0bl8w.mongodb.net/blog?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => console.log('Connected succesfully'))
     .catch((err) => console.log('DB error', err))
 
@@ -25,7 +25,7 @@ app.post('/auth/login', loginValidation, handleValidationErrors, UserController.
 app.post('/auth/register', registerValidation, handleValidationErrors, UserController.register)
 app.get('/auth/me', checkAuth, UserController.getMe)
 
-app.listen(process.env.PORT || 5555 , (err)=> {
+app.listen(5555 , (err)=> {
     if(err){
         console.log(err)
     }
